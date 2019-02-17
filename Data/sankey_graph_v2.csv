@@ -1,0 +1,17 @@
+sexo,family_viol,location,related,freq
+Men,Yes,Home,Relative,25
+Men,Yes,Home,Not Relative,2
+Men ,Yes,Street,Relative,15
+Men,Yes,Street,Not Relative,0
+Men,No,Home,Relative,5
+Men,No,Home,Not Relative,8
+Men ,No,Street,Relative,6
+Men,No,Street,Not Relative,24
+Women,Yes,Home,Relative,20
+Women,Yes,Home,Not Relative,15
+Women,Yes,Street,Relative,2
+Women,Yes,Street,Not Relative,4
+Women,No,Home,Relative,1
+Women,No,Home,Not Relative,2
+Women,No,Street,Relative,0
+Women,No,Street,Not Relative,1
