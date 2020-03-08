@@ -179,7 +179,7 @@ ggplot(test, aes(x=Year, y = total, group=type))+
 ```
 
 ## Homicide rates by state through the years
-The dynamics of homicides have a very local component. As the graph shows, homicides have increase in some states like Colima, Baja California Sur and Zacatecas while it has decreased in states like Durango, the State of Mexico or Queretaro. This is in part because of the varying strength and violence of the drug cartels and the direct confrontations between the cartels and the Mexican police and army.
+The dynamics of homicides have a very local component. As the graph shows, homicides have increased in some states like Colima, Baja California Sur and Zacatecas while it has decreased in states like Durango, the State of Mexico or Queretaro. This is in part because of the varying strength and violence of the drug cartels, and the direct confrontations between the cartels and the Mexican police and army.
 
 ```{r message=FALSE, fig.width= 10, fig.height= 8}
 colors <- c("#DBDBDB","#DBDBDB","#7f1c32","#DBDBDB","#2d7ac1","#DBDBDB","#DBDBDB","#ff3864","#3ba1ff","#DBDBDB","#DBDBDB","#DBDBDB","#DBDBDB","#87c6ff","#DBDBDB","#DBDBDB","#DBDBDB","#DBDBDB","#DBDBDB","#DBDBDB","#DBDBDB","#DBDBDB","#DBDBDB","#DBDBDB","#DBDBDB","#DBDBDB","#DBDBDB","#DBDBDB","#DBDBDB","#DBDBDB","#DBDBDB","#ff85a0")
@@ -210,7 +210,7 @@ ggplot(data = rank_states, aes(x = year, y = rank, group = states)) +
 ``` 
 
 ## Municipalities by level of violence
-The municipalities with the largest homicide rates per 100,000 are located in the West and Southeast regions of the country. The Northwest region comes in a  third place. The graph shows how homicides are concentrated in particular very violent municipalities in each region.
+The municipalities with the largest homicide rates per 100,000 are located in the West and Southeast regions of the country. The Northwest region comes in a  third place. The graph shows how homicides are concentrated in particular very violent municipalities in each region. A targeted security policy in those municipalities is key.
 
 ```{r out.width = "150%"}
 knitr:: include_graphics(mosaico)
@@ -266,9 +266,9 @@ geom_bar(mapping = aes(x = reorder(cause3, -percent), y = percent, group = sexo2
   theme_mmh()
 ```
 
-## Place of homicide and relationship to killer
+## Place of homicide and relationship to killer by gender
 
-Another difference between men and women is that most women are killed at home, regardless if they are killed by a relative or not. Furthermore, more women are killed by relatives than strangers. In contrast, men are killed predominantly in the streets and by strangers.
+Another difference between men and women is that most women are killed at home, regardless if they are killed by a relative or not. Furthermore, more women are killed by relatives than strangers. In contrast, men are killed predominantly in the streets either by relatives or strangers.
 
 ```{r}
 colors <- c("#2d7ac1", "#ff3864", "#ccc9b3")
