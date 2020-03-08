@@ -260,7 +260,7 @@ ggplot(causegraph) +
 geom_bar(mapping = aes(x = reorder(cause3, -percent), y = percent, group = sexo2, fill = factor(sexo2)),stat = "identity", position = "dodge")+ coord_flip() +
   scale_y_continuous(expand = c(0,1))+
   scale_fill_manual ("Gender", values = c("Men" = "#2d7ac1", "Women" = "#7f1c32")) +
-  labs(x = "Cause of homicide", y = "Percent", subtitle = "Men and women are killed primarely by firearm. Yet women are more likely \n than  men to be murdered by asphyxiation or knife, indicating potential feminicides", caption = "Source: INEGI: Mortality Statistics") +
+  labs(x = "Cause of homicide", y = "Percent", subtitle = "Men and women are killed primarely by firearm. Women are more likely \n than  men to be murdered by asphyxiation or knife,\n indicating potential feminicides", caption = "Source: INEGI: Mortality Statistics") +
   ggtitle("Women are more likely to be  killed by knife \n or asphyxiation than men") +
   guides(fill=guide_legend("Gender")) +
   theme_mmh()
